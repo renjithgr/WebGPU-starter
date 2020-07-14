@@ -2,9 +2,14 @@
     "compilerOptions": {
         "outDir": "./dist/",
         "sourceMap": true,
-        "noImplicitAny": true,
-        "module": "es6",
-        "target": "es5",
-        "allowJs": true
-    }
+        "noImplicitAny": false,
+        "module": "esnext",
+        "target": "es2017",
+        "allowJs": true,
+        "moduleResolution": "node"
+    },
+    "include": [
+        "src/**/*",
+        "node_modules/@webgpu/types"
+    ]
 }
